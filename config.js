@@ -1,89 +1,81 @@
 // ============================================
-// 💝 CUSTOMIZE YOUR VALENTINE'S WEBSITE HERE 💝
+// 💝 ¡LA PÁGINA MÁS ROMÁNTICA PARA CAROLINE! 💝
 // ============================================
 
 const CONFIG = {
-    // Your Valentine's name that will appear in the title
-    // Example: "Jade", "Sarah", "Mike"
-    valentineName: "Jade",
+    // Nombre de tu San Valentín
+    valentineName: "Caroline",
 
-    // The title that appears in the browser tab
-    // You can use emojis! 💝 💖 💗 💓 💞 💕
-    pageTitle: "Will You Be My Valentine? 💝",
+    // Título en la pestaña del navegador
+    pageTitle: "Morchii, ¿Quieres ser mi San Valentín? 💖",
 
-    // Floating emojis that appear in the background
-    // Find more emojis at: https://emojipedia.org
+    // Emojis flotantes en el fondo
     floatingEmojis: {
-        hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis
-        bears: ['🧸', '🐻']                       // Cute bear emojis
+        hearts: ['💖', '💗', '💕', '💞', '💓'],  // Puro amor para Caroline
+        bears: ['🧸', '🐻']                      // Porque es tan tierna como un osito
     },
 
-    // Questions and answers
-    // Customize each question and its possible responses
+    // Preguntas y respuestas
     questions: {
         first: {
-            text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
-            noBtn: "No",                                               // Text for "No" button
-            secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
+            text: "Caroline, ¿te gusto?",                            
+            yesBtn: "Obvio 💕",                                               
+            noBtn: "No 😢 (pero no puedes elegir esto jiji)",                                                
+            secretAnswer: "No me gustas, ¡te amo! 💖💡"           
         },
         second: {
-            text: "How much do you love me?",                          // For the love meter
-            startText: "This much!",                                   // Text before the percentage
-            nextBtn: "Next ❤️"                                         // Text for the next button
+            text: "¿Cuánto me amas?",                            
+            startText: "¡Así de infinito! 🎀",                                 
+            nextBtn: "Siguiente 💗"                                           
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🌹", // The big question!
-            yesBtn: "Yes!",                                             // Text for "Yes" button
-            noBtn: "No"                                                 // Text for "No" button
+            text: "¿Quieres ser mi San Valentín el 14 de febrero de 2025? 🌷", 
+            yesBtn: "¡SÍ! 💝",                                            
+            noBtn: "No 😭 (mentira, sí quieres)"                                               
         }
     },
 
-    // Love meter messages
-    // They show up depending on how far they slide the meter
+    // Mensajes del medidor de amor
     loveMessages: {
-        extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows when they go past 5000%
-        high: "To infinity and beyond! 🚀💝",              // Shows when they go past 1000%
-        normal: "And beyond! 🥰"                           // Shows when they go past 100%
+        extreme: "¡OMG! ¿Me amas tanto? 🚀💞💖",
+        high: "¡Hasta el infinito y más allá, morchi! 💡💗",
+        normal: "¡Siempre y para siempre! 🥰🎀"
     },
 
-    // Messages that appear after they say "Yes!"
+    // Mensajes de celebración después de decir "¡Sí!"
     celebration: {
-        title: "Yay! I'm the luckiest person in the world! 🎉💝💖💝💓",
-        message: "Now come get your gift, a big warm hug and a huge kiss!",
-        emojis: "🎁💖🤗💝💋❤️💕"  // These will bounce around
+        title: "¡Sí! ¡Soy la persona más feliz del mundo! 🎉💖",
+        message: "¡Te ganaste 5 beesoo preciosa! 💕",
+        emojis: "🎁💖🤗💝💋❤️💕"
     },
 
-    // Color scheme for the website
-    // Use https://colorhunt.co or https://coolors.co to find beautiful color combinations
+    // Esquema de colores (todo bien rosa para Caroline)
     colors: {
-        backgroundStart: "#ffafbd",      // Gradient start (try pastel colors for a soft look)
-        backgroundEnd: "#ffc3a0",        // Gradient end (should complement backgroundStart)
-        buttonBackground: "#ff6b6b",     // Button color (should stand out against the background)
-        buttonHover: "#ff8787",          // Button hover color (slightly lighter than buttonBackground)
-        textColor: "#ff4757"             // Text color (make sure it's readable!)
+        backgroundStart: "#ffdde1",      // Dulce y suave como ella
+        backgroundEnd: "#ee9ca7",        // Perfecto para el mood romántico
+        buttonBackground: "#ff6b81",     // Botones con mucho love
+        buttonHover: "#ff85a2",          // Suavemente encantador
+        textColor: "#ff3e6c"              // Brilla como su sonrisa
     },
 
-    // Animation settings
-    // Adjust these if you want faster/slower animations
+    // Configuración de animaciones
     animations: {
-        floatDuration: "15s",           // How long it takes hearts to float up (10-20s recommended)
-        floatDistance: "50px",          // How far hearts move sideways (30-70px recommended)
-        bounceSpeed: "0.5s",            // Speed of bouncing animations (0.3-0.7s recommended)
-        heartExplosionSize: 1.5         // Size of heart explosion effect (1.2-2.0 recommended)
+        floatDuration: "14s",
+        floatDistance: "55px",
+        bounceSpeed: "0.5s",
+        heartExplosionSize: 1.6
     },
 
-    // Background Music (Optional)
-    // Add your own music URL after getting proper licenses
+    // Música de fondo
     music: {
-        enabled: true,                     // Music feature is enabled
-        autoplay: true,                    // Try to autoplay (note: some browsers may block this)
-        musicUrl: "https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3", // Music streaming URL
-        startText: "🎵 Play Music",        // Button text to start music
-        stopText: "🔇 Stop Music",         // Button text to stop music
-        volume: 0.5                        // Volume level (0.0 to 1.0)
+        enabled: true,
+        autoplay: true,
+        musicUrl: "https://res.cloudinary.com/dsijyazdq/video/upload/v1739414088/Alex_Warren_-_Carry_You_Home_Lyrics_uu3q0y.mp3", // Música perfecta para el momento
+        startText: "🎶 Ponle ritmo al amor",
+        stopText: "🔇 Shhh, pausa romántica",
+        volume: 0.5
     }
 };
 
-// Don't modify anything below this line unless you know what you're doing
-window.VALENTINE_CONFIG = CONFIG; 
+// No toques nada aquí abajo, que todo fluya con amor 💕
+window.VALENTINE_CONFIG = CONFIG;
